@@ -18,8 +18,10 @@ class ContactHelper {
 
   Future<Database> get db async {
     if (_db != null) {
+
       return _db!;
     } else {
+      
       return _db = await initDb();
     }
   }
